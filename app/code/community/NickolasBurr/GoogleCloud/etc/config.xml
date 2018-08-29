@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * config.xml
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License, which
+ * is bundled with this package in the file LICENSE.txt.
+ *
+ * It is also available on the Internet at the following URL:
+ * https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/LICENSE.txt
+ *
+ * @package        NickolasBurr_GoogleCloud
+ * @copyright      Copyright (C) 2018 Nickolas Burr <nickolasburr@gmail.com>
+ * @license        MIT License
+ */
+-->
+<config>
+    <modules>
+        <NickolasBurr_GoogleCloud>
+            <version>1.0.0</version>
+        </NickolasBurr_GoogleCloud>
+    </modules>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <googlecloud after="Mage_Adminhtml">NickolasBurr_GoogleCloud</googlecloud>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <global>
+        <helpers>
+            <googlecloud>
+                <class>NickolasBurr_GoogleCloud_Helper</class>
+            </googlecloud>
+        </helpers>
+
+        <blocks>
+            <googlecloud>
+                <class>NickolasBurr_GoogleCloud_Block</class>
+            </googlecloud>
+        </blocks>
+
+        <models>
+            <googlecloud>
+                <class>NickolasBurr_GoogleCloud_Model</class>
+            </googlecloud>
+        </models>
+
+        <events>
+            <default>
+                <observers>
+                    <googlecloud_default>
+                        <class>googlecloud/observer</class>
+                        <method>controllerFrontInitBefore</method>
+                    </googlecloud_default>
+                </observers>
+            </default>
+
+            <controller_front_init_before>
+                <observers>
+                    <googlecloud_initialize>
+                        <class>googlecloud/observer</class>
+                        <method>controllerFrontInitBefore</method>
+                    </googlecloud_initialize>
+                </observers>
+            </controller_front_init_before>
+        </events>
+    </global>
+
+    <default>
+        <googlecloud>
+            <general>
+                <enable_module>0</enable_module>
+            </general>
+        </googlecloud>
+    </default>
+</config>

@@ -1,0 +1,16 @@
+{
+  "require": {
+    "php": ">=5.5",
+    "mnsami/composer-custom-directory-installer": "1.1.*",
+    "google/cloud-pubsub": "^1.4"
+  },
+  "config": {
+    "vendor-dir": "./"
+  },
+  "extra": {
+    "installer-paths": {
+      "./google/cloud/core": ["google/cloud-core"],
+      "./google/cloud/pubsub": ["google/cloud-pubsub"]
+    }
+  }
+}

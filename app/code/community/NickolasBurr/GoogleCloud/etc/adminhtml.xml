@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * adminhtml.xml
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License, which
+ * is bundled with this package in the file LICENSE.txt.
+ *
+ * It is also available on the Internet at the following URL:
+ * https://docs.nickolasburr.com/magento/extensions/1.x/googlecloud/LICENSE.txt
+ *
+ * @package        NickolasBurr_GoogleCloud
+ * @copyright      Copyright (C) 2018 Nickolas Burr <nickolasburr@gmail.com>
+ * @license        MIT License
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <googlecloud module="googlecloud" translate="title">
+                                        <title>Google Cloud Autoloader Settings</title>
+                                        <sort_order>700</sort_order>
+                                    </googlecloud>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
