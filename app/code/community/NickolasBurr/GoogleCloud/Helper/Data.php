@@ -47,7 +47,7 @@ class NickolasBurr_GoogleCloud_Helper_Data extends Mage_Core_Helper_Abstract
      * @param string $module Module name.
      * @return string
      */
-    public function getLibModulePath($module)
+    public static function getLibModulePath($module)
     {
         return Mage::getBaseDir('lib') . DIRECTORY_SEPARATOR . $module;
     }
