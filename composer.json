@@ -1,0 +1,17 @@
+{
+  "name": "nickolasburr/googlecloudphpautoloader",
+  "description": "Autoload Google Cloud PHP classes for use within Magento 1.x.",
+  "type": "magento-module",
+  "license": "MIT",
+  "keywords": [
+    "google-cloud",
+    "google-cloud-php",
+    "magento"
+  ],
+  "authors": [
+    {
+      "name": "Nickolas Burr",
+      "email": "nickolasburr@gmail.com"
+    }
+  ]
+}
