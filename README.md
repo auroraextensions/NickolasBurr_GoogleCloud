@@ -12,9 +12,8 @@ By default, [google/cloud-core](https://packagist.org/packages/google/cloud-core
 ## Installation
 
 ```
-git clone https://github.com/nickolasburr/googlecloudphpautoloader.git
-cd googlecloudphpautoloader
-composer install --no-dev
+modman clone https://github.com/nickolasburr/googlecloudphpautoloader.git
+composer install --no-dev --working-dir=./.modman/googlecloudphpautoloader
 ```
 
 ## Usage
