@@ -3,7 +3,7 @@
 Autoload Google Cloud PHP classes for use with Magento 1.9.
 
 By default, only [google/cloud-core](https://packagist.org/packages/google/cloud-core) and its dependencies
-are installed. If you're using this module with [magegcs](https://github.com/nickolasburr/magegcs), make the
+are installed. If you're using this module with [magegcs](https://github.com/auroraextensions/magegcs), make the
 following updates to the `composer.json` file and run `composer update`:
 
 ```
@@ -32,7 +32,7 @@ following updates to the `composer.json` file and run `composer update`:
 ## Installation
 
 ```
-modman clone https://github.com/nickolasburr/googlecloudphpautoloader.git
+modman clone https://github.com/auroraextensions/googlecloudphpautoloader.git
 composer install --no-dev --working-dir=./.modman/googlecloudphpautoloader
 ```
 
