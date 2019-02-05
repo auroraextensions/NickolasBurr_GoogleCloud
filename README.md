@@ -32,8 +32,8 @@ make the following updates to the `composer.json` file and run `composer update`
 ## Installation
 
 ```
-modman clone https://github.com/auroraextensions/googlecloudphpautoloader.git
-composer install --no-dev --working-dir=./.modman/googlecloudphpautoloader
+modman clone https://github.com/auroraextensions/NickolasBurr_GoogleCloud.git
+composer install --no-dev --working-dir=./.modman/NickolasBurr_GoogleCloud
 ```
 
 ## Usage
