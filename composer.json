@@ -24,7 +24,7 @@
   },
   "extra": {
     "installer-paths": {
-      "./lib/GoogleCloud/google/cloud/core": ["google/cloud-core"]
+      "./lib/GoogleCloud/core": ["google/cloud-core"]
     }
   }
 }
