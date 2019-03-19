@@ -6,22 +6,30 @@ By default, only [google/cloud-core](https://packagist.org/packages/google/cloud
 are installed. If you're using this module with [NickolasBurr\_GoogleCloudStorage](https://github.com/auroraextensions/NickolasBurr_GoogleCloudStorage),
 make the following updates to the `composer.json` file and run `composer update`:
 
-```
-"require": {
-  "php": ">=5.5",
-  "mnsami/composer-custom-directory-installer": "1.1.*",
-  "google/cloud-core": "~1.23",
-  "google/cloud-storage": "~1.9"
-},
-```
-
-```
-"extra": {
-  "installer-paths": {
-    "./google/cloud/core": ["google/cloud-core"],
-    "./google/cloud/storage": ["google/cloud-storage"]
-  }
-}
+```diff
+diff --git a/composer.json b/composer.json
+index 8bf5c11..369087d 100644
+--- a/composer.json
++++ b/composer.json
+@@ -17,14 +17,16 @@
+   "require": {
+     "php": ">=5.5",
+     "mnsami/composer-custom-directory-installer": "1.1.*",
+-    "google/cloud-core": "~1.23"
++    "google/cloud-core": "~1.23",
++    "google/cloud-storage": "~1.9"
+   },
+   "config": {
+     "vendor-dir": "./lib/GoogleCloud/"
+   },
+   "extra": {
+     "installer-paths": {
+-      "./lib/GoogleCloud/core": ["google/cloud-core"]
++      "./lib/GoogleCloud/core": ["google/cloud-core"],
++      "./lib/GoogleCloud/storage": ["google/cloud-storage"]
+     }
+   }
+ }
 ```
 
 ## Requirements
