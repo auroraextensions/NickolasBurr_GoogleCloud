@@ -2,6 +2,16 @@
 
 Autoload Google Cloud PHP classes for use with Magento 1.9.
 
+## Table of Contents
+
++ [Documentation](https://docs.auroraextensions.com/magento/extensions/1.x/googlecloud/latest/)
++ [NickolasBurr\_GoogleCloudStorage](#google-cloud-storage)
++ [Requirements](#requirements)
++ [Installation](#installation)
++ [Usage](#usage)
+
+## Google Cloud Storage
+
 By default, only [google/cloud-core](https://packagist.org/packages/google/cloud-core) and its dependencies
 are installed. If you're using this module with [NickolasBurr\_GoogleCloudStorage](https://github.com/auroraextensions/NickolasBurr_GoogleCloudStorage),
 make the following updates to the `composer.json` file and run `composer update`:
